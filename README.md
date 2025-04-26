@@ -51,9 +51,8 @@ The objective is to build a predictive model using customer and campaign interac
 1. **Data Preprocessing** (nulls, encoding, outliers)
 2. **Exploratory Data Analysis (EDA)** (visuals, insights)
 3. **Feature Engineering**
-4. **Model Training** (Logistic Regression, Random Forest, Gradient Boosting)
+4. **Model Training** (Logistic Regression, Random Forest, Gradient Boosting,and Decision tree)
 5. **Model Evaluation** (Accuracy, ROC-AUC, Confusion Matrix)
-6. **Deployment** (via Streamlit)
 
 ---
 
@@ -61,8 +60,8 @@ The objective is to build a predictive model using customer and campaign interac
 
 - Python, Pandas, NumPy, Scikit-Learn
 - Matplotlib, Seaborn
-- Streamlit
 - VS Code / Jupyter
+- Power BI Dashboard
 
 ---
 
