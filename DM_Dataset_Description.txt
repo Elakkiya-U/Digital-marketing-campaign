@@ -1,31 +1,29 @@
-Features
-Demographic Information
+## Dataset Description
 
-CustomerID: Unique identifier for each customer.
-Age: Age of the customer.
-Gender: Gender of the customer (Male/Female).
-Income: Annual income of the customer in USD.
+### Demographic Information
+- `CustomerID`: Unique identifier for each customer
+- `Age`: Age of the customer
+- `Gender`: Male or Female
+- `Income`: Annual income (USD)
 
-Marketing-specific Variables
-CampaignChannel: The channel through which the marketing campaign is delivered (Email, Social Media, SEO, PPC, Referral).
-CampaignType: Type of the marketing campaign (Awareness, Consideration, Conversion, Retention).
-AdSpend: Amount spent on the marketing campaign in USD.
-ClickThroughRate: Rate at which customers click on the marketing content.
-ConversionRate: Rate at which clicks convert to desired actions (e.g., purchases).
-AdvertisingPlatform: Confidential.
-AdvertisingTool: Confidential.
+### Marketing Variables
+- `CampaignChannel`: Email, Social Media, SEO, PPC, Referral
+- `CampaignType`: Awareness, Consideration, Conversion, Retention
+- `AdSpend`: Campaign spend (USD)
+- `ClickThroughRate`: Percentage of clicks per impression
+- `ConversionRate`: Clicks that result in conversion
 
-Customer Engagement Variables
-WebsiteVisits: Number of visits to the website.
-PagesPerVisit: Average number of pages visited per session.
-TimeOnSite: Average time spent on the website per visit (in minutes).
-SocialShares: Number of times the marketing content was shared on social media.
-EmailOpens: Number of times marketing emails were opened.
-EmailClicks: Number of times links in marketing emails were clicked.
+### Engagement Metrics
+- `WebsiteVisits`: Number of visits
+- `PagesPerVisit`: Avg pages per session
+- `TimeOnSite`: Avg time per visit (minutes)
+- `SocialShares`, `EmailOpens`, `EmailClicks`: Engagement levels
 
-Historical Data
-PreviousPurchases: Number of previous purchases made by the customer.
-LoyaltyPoints: Number of loyalty points accumulated by the customer.
+### Purchase History
+- `PreviousPurchases`: Count of past purchases
+- `LoyaltyPoints`: Points earned
 
-Target Variable
-Conversion: Binary variable indicating whether the customer converted (1) or not (0).
+### Target Variable
+- `Conversion`: 1 = Converted, 0 = Not Converted
+
+---
