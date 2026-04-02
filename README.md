@@ -14,7 +14,7 @@ Marketing teams invest budgets across multiple channels without knowing which cu
 
 - **Source:** Kaggle - Digital Marketing Campaign Dataset
 - **Records:** 8,000 customers
-- **Features:** 22 (age, income, ad spend, email engagement, loyalty points, campaign type, channel, and more)
+- **Features:** 20 (age, income, ad spend, email engagement, loyalty points, campaign type, channel, and more)
 - **Target:** `Conversion` - 1 (converted) or 0 (not converted)
 - **Class distribution:** 87.6% converted · 12.4% not converted (imbalanced)
 
