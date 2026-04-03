@@ -18,7 +18,7 @@ Marketing teams invest budgets across multiple channels without knowing which cu
 - **Target:** `Conversion` - 1 (converted) or 0 (not converted)
 - **Class distribution:** 87.6% converted · 12.4% not converted (imbalanced)
 
----
+--- 
 
 ## Approach
 
@@ -42,7 +42,7 @@ Marketing teams invest budgets across multiple channels without knowing which cu
 | Random Forest | 0.89 | 0.89 | 0.81 |
 | **Gradient Boosting** | **0.91** | **0.92** | **0.81** |
 
-**Winner: Gradient Boosting** - 91% accuracy, 0.92 F1 Score, 0.81 ROC-AUC.
+**Best model: Gradient Boosting** - 91% accuracy, 0.92 F1 Score, 0.81 ROC-AUC.
 
 > **Why F1 Score matters here:** With 87.6% of customers already converted, a model predicting "always convert" would achieve 87.6% accuracy while being useless. F1 Score and ROC-AUC are the reliable metrics for imbalanced classification problems.
 
@@ -53,23 +53,6 @@ Marketing teams invest budgets across multiple channels without knowing which cu
 - **Gradient Boosting outperforms Random Forest** because it builds trees sequentially - each tree corrects the previous one's errors. This makes it better at identifying the harder-to-classify non-converters.
 - **Both models agree** that loyalty points, email opens, email clicks, and ad spend are the strongest conversion signals - confirmed through a feature importance agreement scatter plot.
 - **Business recommendation:** Re-engage customers with high loyalty points and strong email interaction before investing in new customer acquisition.
-
----
-
-## Visualisations Generated
-
-| File | Description |
-|------|-------------|
-| `target_distribution.png` | Conversion count and rate breakdown |
-| `conversion_by_channel.png` | Conversion rate by campaign channel |
-| `conversion_by_type.png` | Conversion rate by campaign type |
-| `age_distribution.png` | Age distribution by conversion outcome |
-| `correlation_heatmap.png` | Feature correlation matrix |
-| `model_comparison.png` | All 4 models across all metrics |
-| `confusion_matrices.png` | Side-by-side confusion matrices |
-| `roc_curves.png` | All 4 ROC curves on one chart |
-| `feature_importance_comparison.png` | RF vs GB feature importance side-by-side |
-| `rf_vs_gb_agreement.png` | Scatter plot of feature importance agreement |
 
 ---
 
@@ -110,7 +93,7 @@ jupyter notebook Digital_Marketing_Campaign_Conversion.ipynb
 
 ```
 Digital-marketing-campaign/
-│
+|
 ├── Digital_Marketing_Campaign_Conversion.ipynb   # Main notebook
 ├── Digital_Marketing_Campaign_Dataset.xlsx        # Dataset (Excel)
 ├── README.md                                      # This file
@@ -125,17 +108,6 @@ Digital-marketing-campaign/
     └── rf_vs_gb_agreement.png
 ```
 
----
-
-## Limitations & Future Work
-
-- Dataset may be synthetic - `AdvertisingPlatform` and `AdvertisingTool` are masked
-- Hyperparameter tuning with `GridSearchCV` could further improve Gradient Boosting performance
-- SMOTE oversampling could be explored as an alternative to `class_weight="balanced"`
-- Feature interactions (e.g. AdSpend × LoyaltyPoints) have not been explicitly engineered
-
----
-
 ## Author
 
 **Elakkiya Ulaganathan**  
@@ -144,4 +116,4 @@ Customer Operations & CRM Professional | Data Science Certified
 
 ---
 
-*This project was built as part of a Data Science and AI certification and connects directly to 6 years of real-world customer operations experience - where these exact metrics (conversion rate, campaign channel performance, customer engagement) were tracked manually.*
+*This project was built as part of a Data Science and AI certification and connects directly to 5 years of real-world customer operations experience - where these exact metrics (conversion rate, campaign channel performance, customer engagement) were tracked manually.*
