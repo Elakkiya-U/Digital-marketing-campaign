@@ -111,7 +111,7 @@ Digital-marketing-campaign/
 ## Author
 
 **Elakkiya Ulaganathan**  
-Customer Operations & CRM Professional | Data Science Certified  
+CRM Operations and Reporting Analyst | Data Science Certified  
 [LinkedIn](https://www.linkedin.com/in/uelakkiya) · [GitHub](https://github.com/Elakkiya-U)
 
 ---
